@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-22T12:52:53 IST" name="Capstone Suite" finished-at="2025-03-22T12:53:53 IST" duration-ms="60074">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@293a5bf6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-22T12:52:53 IST" name="Signup Test" finished-at="2025-03-22T12:53:02 IST" duration-ms="8930">
+      <class name="myRunner.signupRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:52:53 IST" name="setUpClass" finished-at="2025-03-22T12:52:54 IST" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@422ab737]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:52:54 IST" name="setup" finished-at="2025-03-22T12:53:01 IST" duration-ms="7321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:53:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-22T12:53:02 IST" duration-ms="902" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register a new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Signup"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'the user is on homepage' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on homepage")
+public void the_user_is_on_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user clicks on sign up")
+public void the_user_clicks_on_sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enters a unique {string} and {string}")
+public void enters_a_unique_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks the sign up button")
+public void clicks_the_sign_up_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see a success message")
+public void the_user_should_see_a_success_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'the user is on homepage' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on homepage")
+public void the_user_is_on_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user clicks on sign up")
+public void the_user_clicks_on_sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enters a unique {string} and {string}")
+public void enters_a_unique_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks the sign up button")
+public void clicks_the_sign_up_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see a success message")
+public void the_user_should_see_a_success_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:53:02 IST" name="tearDownClass" finished-at="2025-03-22T12:53:02 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- myRunner.signupRunner -->
+    </test> <!-- Signup Test -->
+    <test started-at="2025-03-22T12:53:02 IST" name="Login Test" finished-at="2025-03-22T12:53:26 IST" duration-ms="23886">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:02 IST" name="setUp" finished-at="2025-03-22T12:53:09 IST" duration-ms="6445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:1, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:09 IST" name="testValidLogin" finished-at="2025-03-22T12:53:15 IST" duration-ms="6414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:15 IST" name="tearDownTest" finished-at="2025-03-22T12:53:16 IST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:16 IST" name="setUp" finished-at="2025-03-22T12:53:22 IST" duration-ms="5546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:22 IST" name="testInvalidLogin" finished-at="2025-03-22T12:53:25 IST" duration-ms="3615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:25 IST" name="tearDownTest" finished-at="2025-03-22T12:53:26 IST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test started-at="2025-03-22T12:53:26 IST" name="About Us Test" finished-at="2025-03-22T12:53:38 IST" duration-ms="11196">
+      <class name="testcases.AboutUsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:26 IST" name="setUp" finished-at="2025-03-22T12:53:35 IST" duration-ms="8715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAboutUsNavigation()[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:35 IST" name="testAboutUsNavigation" finished-at="2025-03-22T12:53:38 IST" duration-ms="2457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAboutUsNavigation -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:38 IST" name="tearDownTest" finished-at="2025-03-22T12:53:38 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.AboutUsTest -->
+    </test> <!-- About Us Test -->
+    <test started-at="2025-03-22T12:53:38 IST" name="Cart page" finished-at="2025-03-22T12:53:53 IST" duration-ms="15948">
+      <class name="testcases.CartTest">
+        <test-method signature="testOpenCart(java.lang.String)[pri:1, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:38 IST" name="testOpenCart" finished-at="2025-03-22T12:53:52 IST" duration-ms="14631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenCart -->
+        <test-method signature="testPlaceOrder()[pri:2, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:52 IST" name="testPlaceOrder" finished-at="2025-03-22T12:53:53 IST" depends-on-methods="testcases.CartTest.testOpenCart" duration-ms="1295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:53 IST" name="tearDown" finished-at="2025-03-22T12:53:53 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CartTest -->
+    </test> <!-- Cart page -->
+  </suite> <!-- Capstone Suite -->
+</testng-results>

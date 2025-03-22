@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Capstone Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Signup Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="myRunner.signupRunner">
+        <methods>
+          <include name="setup"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- myRunner.signupRunner -->
+    </classes>
+  </test> <!-- Signup Test(failed) -->
+</suite> <!-- Failed suite [Capstone Suite] -->

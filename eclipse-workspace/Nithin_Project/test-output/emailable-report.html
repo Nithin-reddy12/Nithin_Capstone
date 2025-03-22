@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Capstone Suite</th></tr>
+<tr><td><a href="#t0">Signup Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,930</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,886</td><td></td><td></td></tr>
+<tr><td><a href="#t2">About Us Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,196</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Cart page</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,948</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">59,960</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Capstone Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Signup Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">myRunner.signupRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1742628181907</td><td rowspan="1">902</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.LoginTest</td><td><a href="#m1">testInvalidLogin</a></td><td rowspan="1">1742628202342</td><td rowspan="1">3615</td></tr><tr class="passedeven"><td><a href="#m2">testValidLogin</a></td><td rowspan="1">1742628189388</td><td rowspan="1">6414</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">About Us Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.AboutUsTest</td><td><a href="#m3">testAboutUsNavigation</a></td><td rowspan="1">1742628215558</td><td rowspan="1">2457</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Cart page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.CartTest</td><td><a href="#m4">testOpenCart</a></td><td rowspan="1">1742628218055</td><td rowspan="1">14631</td></tr><tr class="passedeven"><td><a href="#m5">testPlaceOrder</a></td><td rowspan="1">1742628232691</td><td rowspan="1">1295</td></tr></tbody>
+</table>
+<h2>Signup Test</h2><h3 id="m0">myRunner.signupRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Register a new user&quot;</td><td>&quot;User Signup&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the user is on homepage&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on homepage&quot;)
+public void the_user_is_on_homepage() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user clicks on sign up&quot;)
+public void the_user_clicks_on_sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;enters a unique {string} and {string}&quot;)
+public void enters_a_unique_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;clicks the sign up button&quot;)
+public void clicks_the_sign_up_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should see a success message&quot;)
+public void the_user_should_see_a_success_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Test</h2><h3 id="m1">testcases.LoginTest#testInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.LoginTest#testValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>About Us Test</h2><h3 id="m3">testcases.AboutUsTest#testAboutUsNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cart page</h2><h3 id="m4">testcases.CartTest#testOpenCart</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.CartTest#testPlaceOrder</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
