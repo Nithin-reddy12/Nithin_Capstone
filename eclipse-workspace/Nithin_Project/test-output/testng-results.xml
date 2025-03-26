@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-22T12:52:53 IST" name="Capstone Suite" finished-at="2025-03-22T12:53:53 IST" duration-ms="60074">
+  <suite started-at="2025-03-26T10:38:26 IST" name="Capstone Suite" finished-at="2025-03-26T10:39:37 IST" duration-ms="71071">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@293a5bf6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@65f8f5ae]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-22T12:52:53 IST" name="Signup Test" finished-at="2025-03-22T12:53:02 IST" duration-ms="8930">
+    <test started-at="2025-03-26T10:38:26 IST" name="Signup Test" finished-at="2025-03-26T10:38:35 IST" duration-ms="9092">
       <class name="myRunner.signupRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:52:53 IST" name="setUpClass" finished-at="2025-03-22T12:52:54 IST" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:myRunner.signupRunner@65f8f5ae]" started-at="2025-03-26T10:38:26 IST" name="setUpClass" finished-at="2025-03-26T10:38:27 IST" duration-ms="542" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@422ab737]]>
+                <![CDATA[org.testng.TestRunner@714e861f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:52:54 IST" name="setup" finished-at="2025-03-22T12:53:01 IST" duration-ms="7321" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:myRunner.signupRunner@65f8f5ae]" started-at="2025-03-26T10:38:27 IST" name="setup" finished-at="2025-03-26T10:38:34 IST" duration-ms="7047" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:53:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-22T12:53:02 IST" duration-ms="902" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:myRunner.signupRunner@65f8f5ae]" started-at="2025-03-26T10:38:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-26T10:38:35 IST" duration-ms="1300" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -147,15 +147,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myRunner.signupRunner@293a5bf6]" started-at="2025-03-22T12:53:02 IST" name="tearDownClass" finished-at="2025-03-22T12:53:02 IST" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:myRunner.signupRunner@65f8f5ae]" started-at="2025-03-26T10:38:35 IST" name="tearDownClass" finished-at="2025-03-26T10:38:35 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- myRunner.signupRunner -->
     </test> <!-- Signup Test -->
-    <test started-at="2025-03-22T12:53:02 IST" name="Login Test" finished-at="2025-03-22T12:53:26 IST" duration-ms="23886">
+    <test started-at="2025-03-26T10:38:35 IST" name="Login Test" finished-at="2025-03-26T10:39:02 IST" duration-ms="26542">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:02 IST" name="setUp" finished-at="2025-03-22T12:53:09 IST" duration-ms="6445" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:38:35 IST" name="setUp" finished-at="2025-03-26T10:38:41 IST" duration-ms="5631" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,15 +166,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:1, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:09 IST" name="testValidLogin" finished-at="2025-03-22T12:53:15 IST" duration-ms="6414" status="PASS">
+        <test-method signature="testValidLogin()[pri:1, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:38:41 IST" name="testValidLogin" finished-at="2025-03-26T10:38:51 IST" duration-ms="10252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:15 IST" name="tearDownTest" finished-at="2025-03-22T12:53:16 IST" duration-ms="987" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:38:51 IST" name="tearDownTest" finished-at="2025-03-26T10:38:52 IST" duration-ms="1056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:16 IST" name="setUp" finished-at="2025-03-22T12:53:22 IST" duration-ms="5546" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:38:52 IST" name="setUp" finished-at="2025-03-26T10:38:57 IST" duration-ms="5140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,19 +185,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:22 IST" name="testInvalidLogin" finished-at="2025-03-22T12:53:25 IST" duration-ms="3615" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:38:57 IST" name="testInvalidLogin" finished-at="2025-03-26T10:39:01 IST" duration-ms="3341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@408d971b]" started-at="2025-03-22T12:53:25 IST" name="tearDownTest" finished-at="2025-03-22T12:53:26 IST" duration-ms="859" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.LoginTest@626abbd0]" started-at="2025-03-26T10:39:01 IST" name="tearDownTest" finished-at="2025-03-26T10:39:02 IST" duration-ms="1086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Login Test -->
-    <test started-at="2025-03-22T12:53:26 IST" name="About Us Test" finished-at="2025-03-22T12:53:38 IST" duration-ms="11196">
+    <test started-at="2025-03-26T10:39:02 IST" name="About Us Test" finished-at="2025-03-26T10:39:11 IST" duration-ms="8778">
       <class name="testcases.AboutUsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:26 IST" name="setUp" finished-at="2025-03-22T12:53:35 IST" duration-ms="8715" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.AboutUsTest@6cd24612]" started-at="2025-03-26T10:39:02 IST" name="setUp" finished-at="2025-03-26T10:39:07 IST" duration-ms="5450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -208,19 +208,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAboutUsNavigation()[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:35 IST" name="testAboutUsNavigation" finished-at="2025-03-22T12:53:38 IST" duration-ms="2457" status="PASS">
+        <test-method signature="testAboutUsNavigation()[pri:0, instance:testcases.AboutUsTest@6cd24612]" started-at="2025-03-26T10:39:07 IST" name="testAboutUsNavigation" finished-at="2025-03-26T10:39:10 IST" duration-ms="2390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAboutUsNavigation -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.AboutUsTest@34e9fd99]" started-at="2025-03-22T12:53:38 IST" name="tearDownTest" finished-at="2025-03-22T12:53:38 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.AboutUsTest@6cd24612]" started-at="2025-03-26T10:39:10 IST" name="tearDownTest" finished-at="2025-03-26T10:39:11 IST" duration-ms="930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- testcases.AboutUsTest -->
     </test> <!-- About Us Test -->
-    <test started-at="2025-03-22T12:53:38 IST" name="Cart page" finished-at="2025-03-22T12:53:53 IST" duration-ms="15948">
+    <test started-at="2025-03-26T10:39:11 IST" name="Category Test" finished-at="2025-03-26T10:39:29 IST" duration-ms="18193">
+      <class name="testcases.CategoryTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.CategoryTest@38145825]" started-at="2025-03-26T10:39:11 IST" name="setUp" finished-at="2025-03-26T10:39:16 IST" duration-ms="5147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddingProductsFromDifferentCategories()[pri:1, instance:testcases.CategoryTest@38145825]" started-at="2025-03-26T10:39:16 IST" name="testAddingProductsFromDifferentCategories" finished-at="2025-03-26T10:39:28 IST" duration-ms="12092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddingProductsFromDifferentCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CategoryTest@38145825]" started-at="2025-03-26T10:39:28 IST" name="tearDown" finished-at="2025-03-26T10:39:29 IST" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CategoryTest -->
+    </test> <!-- Category Test -->
+    <test started-at="2025-03-26T10:39:29 IST" name="Cart Test" finished-at="2025-03-26T10:39:37 IST" duration-ms="8317">
       <class name="testcases.CartTest">
-        <test-method signature="testOpenCart(java.lang.String)[pri:1, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:38 IST" name="testOpenCart" finished-at="2025-03-22T12:53:52 IST" duration-ms="14631" status="PASS">
+        <test-method signature="testOpenCart(java.lang.String)[pri:1, instance:testcases.CartTest@23941fb4]" started-at="2025-03-26T10:39:29 IST" name="testOpenCart" finished-at="2025-03-26T10:39:35 IST" duration-ms="5926" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,15 +254,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenCart -->
-        <test-method signature="testPlaceOrder()[pri:2, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:52 IST" name="testPlaceOrder" finished-at="2025-03-22T12:53:53 IST" depends-on-methods="testcases.CartTest.testOpenCart" duration-ms="1295" status="PASS">
+        <test-method signature="testPlaceOrder()[pri:2, instance:testcases.CartTest@23941fb4]" started-at="2025-03-26T10:39:35 IST" name="testPlaceOrder" finished-at="2025-03-26T10:39:36 IST" depends-on-methods="testcases.CartTest.testOpenCart" duration-ms="1340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlaceOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@5b12b668]" started-at="2025-03-22T12:53:53 IST" name="tearDown" finished-at="2025-03-22T12:53:53 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@23941fb4]" started-at="2025-03-26T10:39:36 IST" name="tearDown" finished-at="2025-03-26T10:39:37 IST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.CartTest -->
-    </test> <!-- Cart page -->
+    </test> <!-- Cart Test -->
   </suite> <!-- Capstone Suite -->
 </testng-results>

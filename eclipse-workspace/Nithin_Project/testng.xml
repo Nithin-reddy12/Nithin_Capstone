@@ -1,7 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Capstone Suite">
 
+
+
+    <listeners>
+             <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+
     <test name="Signup Test">
+       <parameter name="browser" value="firefox" />
         <classes>
             <class name="myRunner.signupRunner" />
         </classes>
@@ -21,11 +28,19 @@
         </classes>
     </test>
 
+    
+    <test name="Category Test">
+           <parameter  name="browser" value="firefox" />
+           <classes>
+                   <class name="testcases.CategoryTest" />
+           </classes>
+    </test>
     <test name="Cart Test">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="testcases.CartTest" />
         </classes>
     </test>
-
+    
+    
 </suite>

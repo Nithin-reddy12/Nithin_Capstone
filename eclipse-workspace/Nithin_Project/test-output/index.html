@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Capstone_Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,6 +117,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Capstone_Suite" title="testcases.AboutUsTest" class="method navigator-link" hash-for-method="testAboutUsNavigation">testAboutUsNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Capstone_Suite" title="testcases.CategoryTest" class="method navigator-link" hash-for-method="testAddingProductsFromDifferentCategories">testAddingProductsFromDifferentCategories</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -212,6 +217,29 @@ public void the_user_should_see_a_success_message() {
           <div class="suite-Capstone_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testcases.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenCart(firefox)">
+                  </a> <!-- testOpenCart(firefox) -->
+                  <span class="method-name">testOpenCart</span>
+                  <span class="parameters">(firefox)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrder">
+                  </a> <!-- testPlaceOrder -->
+                  <span class="method-name">testPlaceOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Capstone_Suite-class-passed -->
+          <div class="suite-Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcases.AboutUsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -220,6 +248,21 @@ public void the_user_should_see_a_success_message() {
                   <a name="testAboutUsNavigation">
                   </a> <!-- testAboutUsNavigation -->
                   <span class="method-name">testAboutUsNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Capstone_Suite-class-passed -->
+          <div class="suite-Capstone_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.CategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddingProductsFromDifferentCategories">
+                  </a> <!-- testAddingProductsFromDifferentCategories -->
+                  <span class="method-name">testAddingProductsFromDifferentCategories</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,29 +289,6 @@ public void the_user_should_see_a_success_message() {
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Capstone_Suite-class-passed -->
-          <div class="suite-Capstone_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.CartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testOpenCart(firefox)">
-                  </a> <!-- testOpenCart(firefox) -->
-                  <span class="method-name">testOpenCart</span>
-                  <span class="parameters">(firefox)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPlaceOrder">
-                  </a> <!-- testPlaceOrder -->
-                  <span class="method-name">testPlaceOrder</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Capstone_Suite-class-passed -->
         </div> <!-- panel Capstone_Suite -->
         <div panel-name="test-xml-Capstone_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -279,7 +299,9 @@ public void the_user_should_see_a_success_message() {
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Capstone Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Signup Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
@@ -298,12 +320,18 @@ public void the_user_should_see_a_success_message() {
       &lt;class name=&quot;testcases.AboutUsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- About Us Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Cart page&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Category Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.CategoryTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Category Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Cart Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.CartTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Cart page --&gt;
+  &lt;/test&gt; &lt;!-- Cart Test --&gt;
 &lt;/suite&gt; &lt;!-- Capstone Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -324,7 +352,10 @@ public void the_user_should_see_a_success_message() {
                 <span class="test-name">About Us Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Cart page (1 class)</span>
+                <span class="test-name">Category Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Cart Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -358,36 +389,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOpenCart')
-data.setCell(0, 2, 'testcases.CartTest')
-data.setCell(0, 3, 14631);
+data.setCell(0, 1, 'testAddingProductsFromDifferentCategories')
+data.setCell(0, 2, 'testcases.CategoryTest')
+data.setCell(0, 3, 12092);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testValidLogin')
 data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 6414);
+data.setCell(1, 3, 10252);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testInvalidLogin')
-data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 3615);
+data.setCell(2, 1, 'testOpenCart')
+data.setCell(2, 2, 'testcases.CartTest')
+data.setCell(2, 3, 5926);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAboutUsNavigation')
-data.setCell(3, 2, 'testcases.AboutUsTest')
-data.setCell(3, 3, 2457);
+data.setCell(3, 1, 'testInvalidLogin')
+data.setCell(3, 2, 'testcases.LoginTest')
+data.setCell(3, 3, 3341);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testPlaceOrder')
-data.setCell(4, 2, 'testcases.CartTest')
-data.setCell(4, 3, 1295);
+data.setCell(4, 1, 'testAboutUsNavigation')
+data.setCell(4, 2, 'testcases.AboutUsTest')
+data.setCell(4, 3, 2390);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'myRunner.signupRunner')
-data.setCell(5, 3, 902);
+data.setCell(5, 1, 'testPlaceOrder')
+data.setCell(5, 2, 'testcases.CartTest')
+data.setCell(5, 3, 1340);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'myRunner.signupRunner')
+data.setCell(6, 3, 1300);
 window.suiteTableData['Capstone_Suite']= { tableData: data, tableDiv: 'times-div-Capstone_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Capstone_Suite">
               </div> <!-- times-div-Capstone_Suite -->
             </div> <!-- times-div -->
@@ -415,79 +450,94 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">myRunner.signupRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@422ab737)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@714e861f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">619 ms</span>
+                <span class="method-start">544 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Register a new user", "User Signup")</span>
-                <span class="method-start">7961 ms</span>
+                <span class="method-start">7614 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">8877 ms</span>
+                <span class="method-start">9038 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">8997 ms</span>
+                <span class="method-start">9164 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">15442 ms</span>
+                <span class="method-start">14798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest</span>
-                <span class="method-start">21859 ms</span>
+                <span class="method-start">25065 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">22848 ms</span>
+                <span class="method-start">26121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">28396 ms</span>
+                <span class="method-start">31265 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest</span>
-                <span class="method-start">32020 ms</span>
+                <span class="method-start">34614 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.AboutUsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">32897 ms</span>
+                <span class="method-start">35729 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAboutUsNavigation</span>
-                <span class="method-start">41612 ms</span>
+                <span class="method-start">41179 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest</span>
-                <span class="method-start">44070 ms</span>
+                <span class="method-start">43572 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.CategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">44519 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddingProductsFromDifferentCategories</span>
+                <span class="method-start">49667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">61759 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.CartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testOpenCart(firefox)</span>
-                <span class="method-start">44109 ms</span>
+                <span class="method-start">62721 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPlaceOrder</span>
-                <span class="method-start">58745 ms</span>
+                <span class="method-start">68657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60040 ms</span>
+                <span class="method-start">70001 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

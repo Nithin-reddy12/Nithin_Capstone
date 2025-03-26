@@ -1,4 +1,3 @@
-// LoginTest.java
 package testcases;
 
 import java.io.IOException;
@@ -23,8 +22,8 @@ public class LoginTest extends BaseClass {
     @Parameters("browser")
     @BeforeMethod
     public void setUp(String browser) throws IOException {
-        BaseClass.invokeBrowser(browser); 
-        loginPage = new LoginPage(driver);
+        invokeBrowser(browser); 
+        loginPage = new LoginPage(getDriver());
         ExtentReportManager.startTest("Login Test");
     }
 
@@ -37,10 +36,10 @@ public class LoginTest extends BaseClass {
         screenshot("Valid Login");
 
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
             wait.until(ExpectedConditions.alertIsPresent());
 
-            Alert alert = driver.switchTo().alert();
+            Alert alert = getDriver().switchTo().alert();
             String alertMessage = alert.getText();
             System.out.println("Alert Message: " + alertMessage);
 
@@ -66,10 +65,10 @@ public class LoginTest extends BaseClass {
         screenshot("Invalid Login");
 
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
             wait.until(ExpectedConditions.alertIsPresent());
 
-            Alert alert = driver.switchTo().alert();
+            Alert alert = getDriver().switchTo().alert();
             String alertMessage = alert.getText();
             System.out.println("Alert Message: " + alertMessage);
 
@@ -82,7 +81,7 @@ public class LoginTest extends BaseClass {
 
     @AfterMethod
     public void tearDownTest() throws InterruptedException {
-        BaseClass.closeBrowser();
+        closeBrowser();
         ExtentReportManager.endTest();
     }
 }

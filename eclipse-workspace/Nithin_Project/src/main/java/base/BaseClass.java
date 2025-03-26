@@ -1,4 +1,3 @@
-// BaseClass.java
 package base;
 
 import org.openqa.selenium.OutputType;
@@ -15,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
     public static Properties prop;
 
     public BaseClass() {
@@ -43,6 +42,10 @@ public class BaseClass {
         } else {
             System.err.println("Driver initialization failed.");
         }
+    }
+
+    public static WebDriver getDriver() {
+        return driver;
     }
 
     public static void closeBrowser() {
